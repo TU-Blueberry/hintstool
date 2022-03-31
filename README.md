@@ -81,7 +81,7 @@ Ein Beispiel findet sich in der [hints_test.yml](test/resources/hints_test.yml).
   Stellen mit 0 gefüllt.\
   Beispiel: `--prefix-len=6`\
   Standardwert: `4`
-- Mit `--auto-save` werden automatisch bei Änderungen gespeichert.\
+- Mit `--auto-save` wird automatisch bei Änderungen gespeichert.\
   Beispiel: `--auto-save=True`
   Standardwert: `False`
 
