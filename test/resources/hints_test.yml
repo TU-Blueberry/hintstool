@@ -1,0 +1,37 @@
+- itemprefix001:
+    question_id: prefix001
+    following_answer_id: prefix001
+    content: |
+      Question1
+- itemprefix002:
+    question_id: prefix002
+    following_answer_id: prefix002
+    content: |
+      glossary<Test/>
+      code<import/>
+- itemprefix003:
+    question_id: prefix003
+    following_answer_id: prefix003
+    content: |
+      Question2
+      bla
+- itemprefix004:
+    answer_id: prefix001
+    question_options: [ prefix002 ]
+    content: |
+      Answer1
+- itemprefix005:
+    answer_id: prefix002
+    question_options: [ prefix001, prefix003, prefix004 ]
+    content: |
+      Answer2
+- itemprefix006:
+    answer_id: prefix003
+    question_options: [ ]
+    content: |
+      Answer3
+- itemprefix007:
+    question_id: prefix004
+    following_answer_id: ''
+    content: |
+      Test4
