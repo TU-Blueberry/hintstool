@@ -93,7 +93,7 @@ MIT-Lizenz (siehe [LICENSE](LICENSE))
 
 [PySimpleGUI](https://github.com/PySimpleGUI/PySimpleGUI) ist lizenziert unter der GNU Lesser General Public License
 v3.0 (siehe
-[LGPLv3](dependencies/licenses/lgpl-3.0.md), [GPLv3](GPLv3)). Die für das Tool genutzt Version kann in
+[LGPLv3](dependencies/licenses/lgpl-3.0.md), [GPLv3](dependencies/licenses/gpl-3.0.md)). Die für das Tool genutzt Version kann in
 der `requirements.txt` oder direkt über pip geändert werden.
 
 ## Teilnehmerinnen und Teilnehmer
