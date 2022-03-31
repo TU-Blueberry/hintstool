@@ -364,7 +364,7 @@ class Entry(ABC):
         self.content = content
 
     def __str__(self):
-        return self.content
+        return self.content.replace("\r", " ").replace("\n", " ")
 
 
 class YAMLParser:

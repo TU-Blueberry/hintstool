@@ -1,5 +1,7 @@
 # Hints GUI-Editor
 
+![Screenshot des Tools](test/resources/preview.png)
+
 Mit diesem Tool lassen sich die Hinweise für
 die [Bluestberry-Lernplattform](https://github.com/TU-Blueberry/bluestberry) erstellen erstellen.
 
@@ -26,26 +28,26 @@ Antworten:
 
 In einer Datei können gleiche `question_id` und `answer_id` vorkommen, solange diese nicht vom gleichen Typ sind.
 
-Ein Beispiel findet sich in der [hints_test.yml](test/resources/hints_test.yml).
+Ein Beispiel befindet sich in der [hints_test.yml](test/resources/hints_test.yml).
 
 ## Bedienung
 
-- Mit dem Tool können `.yml`-Dateien geöffnet und bearbeitet werden. Beim Speichern werden geöffnete Dateien
+- Mit dem Tool können `.yml`-Dateien unter `File` geöffnet und bearbeitet werden. Beim Speichern werden geöffnete Dateien
   überschrieben
-- Mit `Add question` und `Add answer` können neue Fragen oder Antworten erstellt werden. Anfangs haben sie keinen
+- Mit den `Add`-Buttons können neue Fragen oder Antworten erstellt werden. Anfangs haben sie keinen
   Nachfolger und keinen Inhalt.
-- Mit `Remove question` und `Remove answer` werden Fragen oder Antworten gelöscht. **Dieser Vorgang lässt sich nicht
+- Mit den `Remove`-Buttons werden Fragen oder Antworten gelöscht. **Dieser Vorgang lässt sich nicht
   rückgängig machen!**
 - Beim Klicken auf einen Hinweis auf der linken Seite wird der Editor für den Inhalt und der Teil des Tools für die
   Nachfolger geladen.
-- Oben rechts lässt sich das Präfix und die länger der Zahl der ID einstellen. Beispielsweise kann mit `prefix="prefix`
-  und `prefix-length=5` die ID `prefix00123` erzeugt werden.
+- Oben rechts lässt sich das Präfix und die länger der Zahl der ID einstellen. Beispielsweise kann mit `Prefix: prefix`
+  und `Prefix num. length: 5` die ID `prefix00123` erzeugt werden.
 - Diese IDs können durch weitere Skripte weiterverarbeitet oder ersetzt werden.
 - Änderungen im Texteditor lassen sich mit den üblichen Tastenkombinationen rückgängig machen.
 - Im unteren rechten Teil des Tools werden die darauffolgenden Hinweise durch das Klicken auf den jeweiligen Hinweis
   angepasst.
-- Mit `up` und `down` kann die Reihenfolge der Hinweise angepasst werden.
-- Mit `add` und `remove` können manuelle IDs hinzugefügt und entfernt werden.
+- Mit `Up` und `Down` kann die Reihenfolge der Hinweise angepasst werden.
+- Mit `Add` und `Remove` können manuelle IDs hinzugefügt und entfernt werden.
 - Am Anfang der Quelldatei [gui.py](hintstool/gui.py) lassen sich Standardwerte einstellen. Folgende Werte lassen sich
   anpassen:\
   `DEFAULT_PATH`, `DEFAULT_PREFIX`, `DEFAULT_LENGTH`, `AUTO_SAVE` (
@@ -72,17 +74,17 @@ Ein Beispiel findet sich in der [hints_test.yml](test/resources/hints_test.yml).
 ## Kommandozeilen-Argumente
 
 - Mit `--path` wird direkt eine YAML-Datei in das Tool geladen.\
-  Beispiel:`--path="test/resources/"`
+  Beispiel:`--path="test/resources/"`\
   Standardwert: `""`
 - Mit `--prefix` wird das Präfix für die ID gesetzt.\
   Beispiel: `--prefix="prefix"`\
   Standardwert: `"prefix"`
 - Mit `--default-len` wird die Länge der Zahl für die ID bestimmt. Bei weniger genutzten Ziffern werden die ersten
   Stellen mit 0 gefüllt.\
-  Beispiel: `--prefix-len=6`\
+  Beispiel: `--default-len=6`\
   Standardwert: `4`
 - Mit `--auto-save` werden automatisch bei Änderungen gespeichert.\
-  Beispiel: `--auto-save=True`
+  Beispiel: `--auto-save=True`\
   Standardwert: `False`
 
 ## Lizenz
