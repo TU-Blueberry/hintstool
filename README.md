@@ -3,7 +3,7 @@
 ![Screenshot des Tools](test/resources/preview.png)
 
 Mit diesem Tool lassen sich die Hinweise für
-die [Bluestberry-Lernplattform](https://github.com/TU-Blueberry/bluestberry) erstellen erstellen.
+die [Bluestberry-Lernplattform](https://github.com/TU-Blueberry/bluestberry) erstellen.
 
 ## Datenmodell
 
